@@ -27,7 +27,7 @@
             width: 100%;
             height: 100%;
             opacity: 1;
-            pointer-events: none; /* Allow events to pass through the image */
+            pointer-events: none;
             transition: opacity 0.3s ease-in-out;
         }
 
@@ -38,8 +38,33 @@
         #hover-image img {
             width: 100%;
             height: 100%;
-            object-fit: cover; /* Cover the entire container while maintaining aspect ratio */
+            object-fit: cover;
             border-radius: 5px;
+        }
+
+        /* Style for the columns */
+        .columns {
+            display: flex;
+            justify-content: center; /* Center the column horizontally */
+            align-items: center; /* Center the column vertically */
+            margin-top: 20px;
+            position: relative;
+            z-index: 1; /* Ensure columns are above the hover image */
+        }
+
+        .column {
+            width: 30%;
+            text-align: center; /* Center the content within the column */
+        }
+
+        .column h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .column p {
+            font-size: 14px;
+            line-height: 1.5;
         }
     </style>
 </head>
@@ -51,6 +76,21 @@
         <!-- Image for the hover effect -->
         <div id="hover-image">
             <img src="https://trapholt.dk/wp-content/uploads/2023/04/trapholt-fra-oven-udvalgt.jpg" alt="Trapholt Museum">
+        </div>
+    </div>
+
+    <div class="columns">
+        <div class="column">
+            <h3>Open Hours</h3>
+            <p>Monday - Friday: 9:00 AM - 5:00 PM<br>
+                Saturday: 10:00 AM - 4:00 PM<br>
+                Sunday: Closed</p>
+        </div>
+
+        <div class="column">
+            <h3>Directions</h3>
+            <p>Trapholt Museum for Modern Art and Design<br>
+                Address: Æblehaven 23, 5500 Middelfart, Denmark</p>
         </div>
     </div>
 </body>
