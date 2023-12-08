@@ -97,43 +97,209 @@ nav a:hover {
 }
 
 /* Exhibitions and Events Sections */
-#exhibitions,
+/* #exhibitions,
 #events {
-    background-color: #f5f5f5;
-    padding: 80px 20px; /* Adjusted padding */
+    background-color:white;
+    color: black;
 }
 
 #exhibitions h2,
 #events h2 {
     text-align: center;
+    color: #333;  Dark grey text color 
+} */
+
+#exhibitions{
     color: #333;
-    margin-bottom: 40px; /* Adjusted margin */
 }
+
+.current{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 25px;
+}
+
+
+
+
+.block1{
+    display: flex;
+    height: 250px;
+    
+}
+.exhibition1 {
+    border: 5px solid #a60321;
+    width: 60%;
+    padding-left: 25px;
+    background-image: url(img/CAPTURAS/Screenshot\ 2023-12-05\ at\ 16.36.05.png);
+}
+
+.button1{
+    color: #333;
+    text-decoration: none;
+    
+}
+.button1:hover{
+    color: #a60321;
+    transition: 0.4s;
+}
+.exhibition1 h1{
+    font-size: 20px;
+
+}
+
+.exhibition1 p{
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+.exhibition2 {
+    border: 5px solid #f2884b;
+    width: 40%;
+    font-size: 16px;
+    padding-left: 25px;
+    background-image: url(img/CAPTURAS/Screenshot\ 2023-12-05\ at\ 16.27.21.png);
+}
+.exhibition2 h2{
+    font-size: 20px;
+
+}
+
+.exhibition2 p{
+    font-size: 15px;
+}
+
+.button2{
+    color: #333;
+    text-decoration: none;
+}
+.button2:hover{
+    color: #f2884b;
+    transition: 0.4s;
+}
+
+
+
+
+
+
+
+.block2{
+    display: flex;
+    height: 250px;
+}
+.exhibition3{
+    border: 5px solid  #f2a0be;
+    width: 40%;
+    padding-left: 25px;
+    background-image: url(img/CAPTURAS/Screenshot\ 2023-12-05\ at\ 16.39.50.png);
+}
+
+.exhibition3 h3{
+    font-size: 20px;
+}
+
+.button3{
+    color: #333;
+    text-decoration: none;
+}
+.button3:hover{
+    color: #f2a0be;
+    transition: 0.4s;
+}
+
+.exhibition4{
+    border: 5px solid #590202;
+    width: 60%;
+    padding-left: 25px;
+    background-image: url(img/CAPTURAS/Screenshot\ 2023-12-05\ at\ 16.42.04.png);
+}
+.exhibition4 h4{
+    font-size: 20px;
+}
+
+.button4{
+    color: #333;
+    text-decoration: none;
+}
+.button4:hover{
+    color: #590202;
+    transition: 0.4s;
+}
+
+
+
+
+
+
+.block3{
+    display: flex;
+    height: 250px;
+    
+}
+.exhibition5{
+    border: 5px solid #3270a6;
+    width: 60%;
+    padding-left: 25px;
+    background-image: url(img/CAPTURAS/Screenshot\ 2023-12-05\ at\ 16.42.56.png);
+}
+.exhibition5 h5{
+    font-size: 20px;
+}
+
+.button5{
+    color: #333;
+    text-decoration: none;
+}
+.button5:hover{
+    color: #3270a6;
+    transition: 0.4s;
+}
+.exhibition6 {
+   
+    width: 40%;
+    
+}
+.button6{
+    color: #333;
+    text-decoration: none;
+    text-align: center;
+    font-size: 40px;
+}
+
+
+/*
+
+#exhibition p {
+    
+}
+
+
 
 .exhibition,
 .event {
-    background-color: #fff;
-    padding: 30px; /* Adjusted padding */
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Increased box shadow */
-    margin-bottom: 40px;
-    transition: transform 0.3s ease-in-out; /* Added transition effect */
+    background-color: #fff; /* White background 
+    
 }
 
-.exhibition:hover,
-.event:hover {
-    transform: scale(1.05); /* Scale effect on hover */
-}
+*/
 
 .exhibition h3,
 .event h3 {
-    color: #333;
+    color: #333; /* Dark grey text color */
 }
 
 .exhibition p,
 .event p {
-    color: black;
+    color: #666; /* Grey text color */
 }
+
 
 /* Contact Section */
 
@@ -293,4 +459,4 @@ footer {
 
 .button-link:hover {
     background-color: #2980b9; /* Change to a darker shade or different color */
-}
+}   
