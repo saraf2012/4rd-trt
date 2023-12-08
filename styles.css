@@ -96,19 +96,6 @@ nav a:hover {
     color: #ddd;
 }
 
-/* Exhibitions and Events Sections */
-/* #exhibitions,
-#events {
-    background-color:white;
-    color: black;
-}
-
-#exhibitions h2,
-#events h2 {
-    text-align: center;
-    color: #333;  Dark grey text color 
-} */
-
 #exhibitions{
     color: #333;
 }
@@ -119,8 +106,6 @@ nav a:hover {
     text-align: center;
     font-size: 25px;
 }
-
-
 
 
 .block1{
@@ -153,12 +138,6 @@ nav a:hover {
     font-size: 15px;
 }
 
-
-
-
-
-
-
 .exhibition2 {
     border: 5px solid #f2884b;
     width: 40%;
@@ -183,12 +162,6 @@ nav a:hover {
     color: #f2884b;
     transition: 0.4s;
 }
-
-
-
-
-
-
 
 .block2{
     display: flex;
@@ -233,11 +206,6 @@ nav a:hover {
     transition: 0.4s;
 }
 
-
-
-
-
-
 .block3{
     display: flex;
     height: 250px;
@@ -272,23 +240,6 @@ nav a:hover {
     text-align: center;
     font-size: 40px;
 }
-
-
-/*
-
-#exhibition p {
-    
-}
-
-
-
-.exhibition,
-.event {
-    background-color: #fff; /* White background 
-    
-}
-
-*/
 
 .exhibition h3,
 .event h3 {
