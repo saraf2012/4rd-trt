@@ -1,0 +1,501 @@
+body, html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    width: 100%;
+    overflow-x: hidden;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html{
+
+    scroll-behavior: smooth;
+}
+
+
+header {
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 55px; 
+    position: sticky;
+    top: 0;
+    background-color: lightgray; 
+    z-index: 1000; 
+}
+
+.logo-container {
+    text-align: left;
+    margin-top: 10px;
+}
+
+
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    margin: 0 10px; /* Adjust the margin to your preference */
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+    padding-right: 50px;
+}
+
+nav a:hover {
+    color: white;
+}
+
+/* Welcome Section */
+#home {
+    position: relative;
+    color: #fff;
+}
+
+#home .video-container {
+    position: relative;
+    overflow: hidden;
+    max-height: 600px; /* Adjusted the maximum height */
+}
+
+#home video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    display: block;
+}
+
+
+#home .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#home .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#home h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#home p {
+    font-size: 18px;
+    color: #ddd;
+}
+
+#exhibitions{
+    color: #333;
+}
+
+.current{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 25px;
+}
+
+
+.block1{
+    display: flex;
+    height: 250px;
+    
+}
+.exhibition1 {
+    border: 5px solid #a60321;
+    width: 60%;
+    padding-left: 25px;
+    background-image: url(img/CAPTURAS/Screenshot\ 2023-12-05\ at\ 16.36.05.png);
+}
+
+.button1{
+    color: #333;
+    text-decoration: none;
+    
+}
+.button1:hover{
+    color: #a60321;
+    transition: 0.4s;
+}
+.exhibition1 h1{
+    font-size: 20px;
+
+}
+
+.exhibition1 p{
+    font-size: 15px;
+}
+
+.exhibition2 {
+    border: 5px solid #f2884b;
+    width: 40%;
+    font-size: 16px;
+    padding-left: 25px;
+    background-image: url(img/CAPTURAS/Screenshot\ 2023-12-05\ at\ 16.27.21.png);
+}
+.exhibition2 h2{
+    font-size: 20px;
+
+}
+
+.exhibition2 p{
+    font-size: 15px;
+}
+
+.button2{
+    color: #333;
+    text-decoration: none;
+}
+.button2:hover{
+    color: #f2884b;
+    transition: 0.4s;
+}
+
+.block2{
+    display: flex;
+    height: 250px;
+}
+.exhibition3{
+    border: 5px solid  deeppink;
+    width: 40%;
+    padding-left: 25px;
+    background-image: url(img/CAPTURAS/Screenshot\ 2023-12-05\ at\ 16.39.50.png);
+}
+
+.exhibition3 h3{
+    font-size: 20px;
+}
+
+.button3{
+    color: black;
+    text-decoration: none;
+}
+.button3:hover{
+    color: pink;
+    transition: 0.4s;
+}
+
+.exhibition4{
+    border: 5px solid red;
+    width: 60%;
+    padding-left: 25px;
+    background-image: url(img/CAPTURAS/Screenshot\ 2023-12-05\ at\ 16.42.04.png);
+}
+.exhibition4 h4{
+    font-size: 20px;
+}
+
+.button4{
+    color: black;
+    text-decoration: none;
+}
+.button4:hover{
+    color: orange;
+    transition: 0.4s;
+}
+
+.block3{
+    display: flex;
+    height: 250px;
+    
+}
+
+#events {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100vh; /* Set the height to 100% of the viewport height */
+    margin: 0 auto;
+}
+
+.swiper-slide {
+    text-align: center;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Ensure the border-radius is applied correctly */
+}
+
+.swiper-slide img {
+    height: 70%; /* Set a specific height for the image */
+    width: auto; /* Auto width to maintain aspect ratio */
+    object-fit: cover; /* Ensure the entire image is visible */
+    border-radius: 10px;
+}
+
+.swiper-slide .event-description {
+    padding: 20px;
+}
+
+.swiper-pagination {
+    bottom: 20px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #fff;
+}
+
+.swiper-pagination-bullet {
+    background: #007bff;
+}
+
+
+/* Contact Section */
+
+footer {
+    background-color: black; /* Set your desired background color for the footer */
+    color: white; /* Set your desired text color for the footer */
+    position: relative;
+    width: 100%;
+    margin-top: auto; /* Push the footer to the bottom of the content area */
+}
+
+.contact-box {
+    text-align: center;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    color: black;
+    /* Remove height: 100%; to allow the box to expand based on content */
+}
+
+#contact address {
+    color: black;
+}
+#cafe {
+    color: #333;
+    text-align: center;
+}
+
+.current {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 25px;
+}
+
+#cafe .block1,
+#cafe .block2 {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -10px; /* Add negative margin to remove space between boxes */
+}
+
+.cafe {
+    flex: 1;
+    border: 5px solid #a60321;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0 0px; /* Add margin to create space between boxes */
+    height: 250px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.cafe img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.cafe h3 {
+    font-size: 20px;
+    margin-top: 0px;
+}
+
+.cafe p {
+    font-size: 15px;
+    padding: 0px;
+}
+
+.button1,
+.button2,
+.button3,
+.button4 {
+    color: #333;
+    text-decoration: none;
+}
+
+.button1:hover,
+.button2:hover,
+.button3:hover,
+.button4:hover {
+    color: #a60321;
+    transition: 0.4s;
+}
+
+#about-us {
+    text-align: center;
+    margin-top: 50px;
+}
+
+footer {
+    background-color: #fff;
+    color: #000;
+    padding: 20px 0;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-column {
+    width: 30%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.footer-column h3 {
+    font-size: 1.2em;
+}
+
+.footer-column p {
+    color: #000;
+}
+
+.footer-column a {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+#book-visit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: black;
+    margin-top: 50px; /* Adjusted margin from the top */
+}
+
+#book-visit h2 {
+    margin-bottom: 20px;
+    margin-top: 0; /* Adjusted margin from the top to move the text up */
+}
+
+.visit-options-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the child elements horizontally */
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 20px; /* Adjusted margin from the top */
+}
+
+.calendar-container {
+    width: 50%; /* Adjusted width for the calendar container */
+}
+
+.flatpickr-calendar {
+    width: 100%; /* Use 100% to fill the container width */
+    max-width: 1000px; /* Set a maximum width to avoid excessive stretching */
+    height: 300px;
+    /* Add any other styles as needed */
+}
+
+
+.options-block {
+    width: 50%;
+    /* Adjusted layout to make room for the wider calendar */
+    /* You might need to further adjust these styles based on your layout */
+}
+
+.visit-option-btn {
+    background-color: orange;
+    color: black;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.visit-option-details {
+    display: none;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    height: 32vh;
+}
+
+.visit-option-btn.active {
+    background-color: white; /* Change the background color on button click */
+    color:black; /* Change the text color on button click */
+}
+
+.visit-option-title {
+    color: black; /* Default text color */
+}
+
+.visit-option-title.active {
+    color: black; /* Change this to your desired color */
+}
+.active {
+    color: black; /* Change this to your desired color */
+}
+#singleAdmissionBtn:focus + #singleAdmissionDetails,
+#familyPackageBtn:focus + #familyPackageDetails,
+#groupToursBtn:focus + #groupToursDetails {
+    display: block;
+}
+
+.button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #3498db; /* Use your preferred button color */
+    color: #ffffff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-align: right;
+}
+
+.button-link:hover {
+    background-color: #2980b9; /* Change to a darker shade or different color */
+}   
+
+section {
+    margin-bottom: 40px; /* Adjust the value to control the separation */
+}
+
+section:not(:last-child) {
+    margin-bottom: 40px; /* Adjust the value to control the separation */
+}
